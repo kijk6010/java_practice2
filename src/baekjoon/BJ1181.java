@@ -22,11 +22,13 @@ public class BJ1181 {
 				}
 			}
 		});
-		System.out.println(arr[0]);	
+		StringBuilder sb = new StringBuilder();
+		sb.append(arr[0]).append('\n');
 		for(int i=1;i<N;i++) {
 			if(!arr[i].equals(arr[i-1])) {
-				System.out.println(arr[i]);	
+				sb.append(arr[i]).append('\n');	
 			}
 		}
+		System.out.print(sb);
 	}
 }
